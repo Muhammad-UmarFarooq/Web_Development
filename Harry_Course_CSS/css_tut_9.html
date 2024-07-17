@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseude selectors & more designing</title>
+</head>
+<style>
+.container{
+    border:2px solid red;
+    background-color: rgb(223,245,201);
+    padding: 34px;
+    margin: 34px;
+    width:666px;
+}
+.btn{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:bold ;
+    background-color: rgb(247, 146, 14);
+    padding:6px;
+    border: none;
+    /* 1) to display cursor(handsymbol)while keeping mouse on btn (contact us) we use this */
+    cursor:pointer;
+    font-size:13px;
+    border-radius:4px;
+}
+a{
+    /* 2) to remove hyperlink underline we use this */
+    text-decoration: none;
+    color:black;
+}
+
+
+/* 3) //** element:active,visited,hover are all pseudo selectors **\\   */
+
+
+/* 4) a:hover means when we keep our mouse to a element then what should do */
+/* 5) this hover does not work if you write visited after this .*/
+/* 6)to make work you have to write this after visited. (disable comment 13 to make this hover active)*/
+a:hover{
+    color:rgb(249, 250, 249);
+    background-color: rgb(7, 7, 7);
+}
+
+/* 7) a:visited means when you have visited the a link means opened the link  the after opening and when you come back from link it displays following color*/
+a:visited{
+    /* 8)  color means only the text color changes */
+    /* 9) color:darkgreen; */
+    /* 10) if once you open the link then everytime you refresh and open it will always display the mentioned style.  */
+    /* 11) to not show the mentioned style you have to change the link href */
+    /* 12) after visiting the a:hover does not work and any id or class applied color also does not work  */
+        background-color:aqua;
+}
+/* 13) if u want to see this hover then u have to remove .btn class hover */
+ /* 14) a:hover{
+    color:rgb(249, 250, 249);
+    background-color: rgb(7, 7, 7);
+    /* if you want to see border when you place your mouse on element then use border */
+    border: 2px solid black
+}  */
+
+
+/* 15) a:active means when you click the link then it blinks the color */
+a:active{
+    background-color: purple;
+}
+
+/* 16) this hover is working bcz we have written this after visited */
+ .btn:hover{ 
+    color:cadetblue;
+    background-color: tomato;
+}
+</style>
+<body>
+    <div class="container" id="cont1">
+<h3>This is my heading</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam harum ad adipisci quam temporibus praesentium recusandae hic, quas at eum quae animi esse. Doloribus id totam eum dolore distinctio esse velit voluptatum, facilis sapiente.</p>
+<a href="https://google.com", class="btn">Read more</a>
+<button class="btn">Contact us</button>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student registration</title>
+    <style>
+    h2{
+        text-align: center;
+        margin-left: 200px;
+    
+    }    
+    
+
+        #form {
+            box-sizing: border-box;
+            background-color: rgb(242, 10, 10);
+            margin: 0px 50px 50px 500px;
+            border: 3px solid black;
+            border-style: dashed;
+            padding: 5px;
+            height: 1150px;
+            width: 900px;
+        }
+
+        #heading {
+            text-decoration: underline;
+            color: rgb(8, 8, 243);
+            size: 4px;
+            margin: 0px;
+        }
+
+        label {
+            font-size: 20px;
+
+        }
+
+      
+        /* input{ 
+             margin-left:100px;
+              }  */
+
+        .divbox {
+            padding: 10px;
+            /* float:inline-start; */
+            text-align: left;
+        }
+
+        input {
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="heading">
+            <h2>Student Registration Form Using Table in HTML</h2>
+        </div>
+        <form action="" id="form">
+            <div class="divbox">
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" max="50">
+                <label class="class1">(Max 50 characters allowed)</label>
+            </div>
+            <div class="divbox">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" max="50">
+                <label class="class1">(Max 50 characters allowed)</label>
+            </div>
+            <div class="divbox">
+                <label for="emailid">Email id</label>
+                <input type="email" id="emailid" required>
+            </div>
+            <div class="divbox">
+                <label for="number">Mobile Number</label>
+                <input type="number" id="number">
+                <label>(10 Digits Allowed)</label>
+            </div>
+            <div class="divbox">
+                <label for="password">Password</label>
+                <input type="password" name="hello" id="password">
+            </div>
+            <div class="divbox">
+                <label>Gender</label>
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female
+            </div>
+            <div class="divbox">
+                <label for="dob">Date of Birth(DOB)</label>
+                <input type="date" id="dob">
+            </div>
+            <div class="divbox">
+            <label for="address">Address</label>
+                <textarea id="address" cols="30" rows="10"></textarea>
+            </div>
+            <div class="divbox">
+            <label for="city">City</label>
+                <input type="text" id="city" max="50">
+                <label>(Max 50 Characters Allowed)</label>
+            </div>
+            <div class="divbox">
+            <label for="pincode">Pin Code</label>
+                <input type="number" id="pincode" max="6">
+                <label>(Max 6 Numbers Allowed)</label>
+
+            </div>
+            <div class="divbox">
+            <label for="state">State</label>
+                <input type="text" id="state" max="50">
+                <label>(Max 50 Characters Allowed)</label>
+            </div>
+            <div class="divbox">
+                <label for="country">Country</label>
+                <input type="text" id="country" max="50">
+
+            </div>
+            <div class="divbox">
+                <label>Hobbies</label>
+                <input type="checkbox" id="draw"><label for="draw">Drawing</label>
+                <input type="checkbox" id="sing"><label for="sing">Singing</label>
+                <input type="checkbox" id="dance"><label for="dance">Dancing</label>
+                <input type="checkbox" id="sketch"><label for="sketch">Sketching</label>
+                <input type="checkbox" id="others"><label for="others">Others</label>
+                <input type="text">
+                <label>(Max 50 Characters Allowed)</label>
+            </div>
+            <div class="divbox">
+                <label>Qualifications</label>
+                <input type="checkbox" id="hs"><label for="hs">High School(10th)</label><br>
+
+                <input type="checkbox" id="higs"><label for="higs">Higher School(12th)</label><br>
+
+                <input type="checkbox" id="g"><label for="g">Graduation(Bachelors)</label><br>
+
+                <input type="checkbox" id="pg"><label for="pg">Post Graduation(Masters)</label><br>
+
+                <input type="checkbox" id="phd"><label for="phd">Phd</label><br>
+
+
+            </div>
+            <div class="divbox">
+                <label>Courses Applied For</label>
+                <input type="radio" id="caf1"><label for="caf1">BCA(Bachelor of Computer Applications) <br>
+                <input type="radio" id="caf2"><label for="caf2">B.Com(Bachelor of Commerce) <br>
+                <input type="radio" id="caf3"><label for="caf3">B.Sc(Bachelor of Science) <br>
+                <input type="radio" id="caf4"><label for="caf4">>BA(Bachelor of Arts) <br>
+                <input type="radio" id="caf5"><label for="caf5">MCA(Master of Computer Applications)<br>
+                <input type="radio" id="caf6"><label for="caf6"> M.Com(Master of Commerce)<br>
+                <input type="radio" id="caf7"><label for="caf7">M.Sc(Master of Science) <br>
+                <input type="radio" id="caf8"><label for="caf8">MA(Master of Arts) <br>
+
+            </div>
+            <div>
+               <button type="submit">Submit</button>
+               <button type="reset">Reset</button>
+            </div>
+            
+        </form>
+
+
+    </div>
+</body>
+
+</html>
